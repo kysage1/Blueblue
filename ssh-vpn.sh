@@ -131,7 +131,7 @@ cd
 clear 
 
 # Getting websocket ssl stunnel
-wget -q -O /usr/local/bin/ws-stunnel "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/ws-stunnel"
+wget -q -O /usr/local/bin/ws-stunnel "https://raw.githubusercontent.com/hudaz4/Blueblue/main/ws-stunnel"
 chmod +x /usr/local/bin/ws-stunnel
 
 # Installing Service Ovpn Websocket
@@ -369,7 +369,7 @@ rm -f /usr/local/bin/stunnel4
 # banner /etc/issue.net
 sleep 1
 echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/issue.net"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/hudaz4/Blueblue/main/issue.net"
 chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
