@@ -75,7 +75,7 @@ echo '#!/bin/bash' > /usr/bin/reboot
 echo 'tanggal=$(date +"%m-%d-%Y")' >> /usr/bin/reboot
 echo 'waktu=$(date +"%T")' >> /usr/bin/reboot
 echo 'echo "Server successfully rebooted on the date of $tanggal hit $waktu." >> /root/log-reboot.txt' >> /usr/bin/reboot
-echo '/sbin/shutdown -r now' >> /usr/bin/reboot
+#echo '/sbin/shutdown -r now' >> /usr/bin/reboot
 chmod +x /usr/bin/reboot
 fi
 
