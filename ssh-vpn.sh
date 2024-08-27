@@ -484,6 +484,9 @@ echo -e "[ ${green}INFO$NC ] Install successfully..."
 sleep 1
 echo -e "[ ${green}INFO$NC ] Config file at /usr/local/ddos/ddos.conf"
 
+apt remove -y fail2ban > /dev/null 2>&1
+apt purge -y fail2ban > /dev/null 2>&1
+
 # Banner /etc/issue.net
 rm -fr /etc/issue.net
 rm -fr /etc/issue.net.save
