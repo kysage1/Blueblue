@@ -171,7 +171,7 @@ echo -e ""
 echo -e "======================================"
 echo -e ""
 echo -e "      AutoReboot : On"
-echo -e "      AutoReboot Every : 1 Mount"
+echo -e "      AutoReboot Every : 1 Month"
 echo -e ""
 echo -e "======================================"
 service cron reload >/dev/null 2>&1
@@ -179,6 +179,7 @@ service cron restart >/dev/null 2>&1
 ;;
 7)
 rm -rf /etc/cron.d/auto_reboot
+rm -rf /usr/bin/reboot
 echo "" > /root/log-reboot.txt
 echo -e ""
 echo -e "======================================"
